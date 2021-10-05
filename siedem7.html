@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("Podaj a:"));
+    let b=parseInt(prompt("Podaj b:"));
+    let c=parseInt(prompt("Podaj c:"));
+    let p=1/2*(a+b+c); //połowa obwodu
+    let d=p*(p-a)*(p-b)*(p-c); //d to wynik, który wychodzi przed pierwiastkowaniem
+    let s=Math.sqrt(d);
+    let s2=s.toFixed(2); //zaokrąglanie do dwóch miejsc po przecinku
+
+    document.write(`Przy użyciu wzoru Herona obliczyłem, że połowa obwodu wynosi ${p} natomiast jego pole to ${s}`)
+</script>
+</body>
+</html>
